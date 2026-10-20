@@ -1,0 +1,24 @@
+{
+  "name": "adhan-bar",
+  "version": "0.1.0",
+  "description": "Tray Adhan player with countdown icon",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.local.adhanbar",
+    "productName": "Adhan Bar",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "adhan": "^4.4.6"
+  },
+  "devDependencies": {
+    "electron": "^44.9.1",
+    "electron-builder": "^26.15.3"
+  }
+}
